@@ -1,169 +1,164 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>India Job Hub - Sarkari Results</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>India Result Hub</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
       margin: 0;
-      padding: 0;
-      color: #000;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
     }
+
     header {
-      background-color: #990000;
-      color: #fff;
-      padding: 15px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-    nav {
-      background-color: #333;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
+      background: #003366;
       color: white;
-      padding: 12px 15px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    nav a:hover {
-      background-color: #e60000;
-    }
-    .container {
       padding: 20px;
-    }
-    h2 {
       text-align: center;
-      color: #990000;
-      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 30px;
-    }
-    th, td {
-      padding: 10px;
-      border: 1px solid #ccc;
-      text-align: left;
-      font-size: 14px;
-    }
-    th {
-      background-color: #990000;
-      color: white;
-    }
-    a.button {
-      background-color: #e60000;
-      color: white;
-      padding: 6px 12px;
-      text-decoration: none;
-      border-radius: 3px;
-      font-size: 13px;
-    }
-    a.button:hover {
-      background-color: #cc0000;
-    }
-    .gov-links {
+
+    .main-sections {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+      justify-content: space-around;
+      background: #ffffff;
+      padding: 20px 0;
+    }
+
+    .main-box {
+      flex: 1 1 30%;
+      margin: 10px;
+      background: #e9ecef;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .main-box:hover {
+      transform: scale(1.03);
+      background: #d9e6f2;
+    }
+
+    .main-box h2 {
+      background-color: #dc3545;
+      color: white;
+      padding: 10px 0;
+      border-radius: 10px 10px 0 0;
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .link-section {
+      background: #ffffff;
+      margin: 20px auto;
+      max-width: 800px;
+      padding: 15px;
+      border-left: 5px solid #007bff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .link-section h3 {
+      color: #007bff;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+    }
+
+    .link-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .link-section ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .link-section ul li a {
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    .link-section ul li a:hover {
+      color: #dc3545;
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #343a40;
+      color: white;
+      text-align: center;
+      padding: 15px;
       margin-top: 30px;
     }
-    .gov-links a {
-      background-color: #222;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 13px;
-    }
-    .gov-links a:hover {
-      background-color: #990000;
-    }
-    footer {
-      text-align: center;
-      background-color: #f2f2f2;
-      padding: 10px;
-      font-size: 13px;
-      color: #333;
+
+    @media (max-width: 768px) {
+      .main-sections {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-box {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>India Job Hub - Sarkari Result Style</h1>
-</header>
+  <header>India Result Hub</header>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#">Latest Jobs</a>
-  <a href="#">Admit Card</a>
-  <a href="#">Results</a>
-  <a href="#">Answer Key</a>
-</nav>
-
-<div class="container">
-  <h2>📋 Latest Sarkari Jobs</h2>
-  <table>
-    <tr>
-      <th>Post Name</th>
-      <th>Apply Date</th>
-      <th>Last Date</th>
-      <th>Link</th>
-    </tr>
-    <tr>
-      <td>SSC GD Constable 2025</td>
-      <td>01 July 2025</td>
-      <td>30 July 2025</td>
-      <td><a class="button" href="https://ssc.nic.in" target="_blank">Apply Now</a></td>
-    </tr>
-    <tr>
-      <td>UPSC NDA II 2025</td>
-      <td>05 Aug 2025</td>
-      <td>03 Sep 2025</td>
-      <td><a class="button" href="https://upsconline.nic.in" target="_blank">Apply Now</a></td>
-    </tr>
-    <tr>
-      <td>REET 2025 Result</td>
-      <td colspan="2">28 June 2025</td>
-      <td><a class="button" href="https://rajeduboard.rajasthan.gov.in" target="_blank">View Result</a></td>
-    </tr>
-  </table>
-
-  <h2>🌐 Govt. Official Websites</h2>
-  <div class="gov-links">
-    <a href="https://ssc.nic.in" target="_blank">SSC</a>
-    <a href="https://upsc.gov.in" target="_blank">UPSC</a>
-    <a href="https://rpsc.rajasthan.gov.in" target="_blank">RPSC</a>
-    <a href="https://bsf.gov.in" target="_blank">BSF</a>
-    <a href="https://cisf.gov.in" target="_blank">CISF</a>
-    <a href="https://joinindianarmy.nic.in" target="_blank">Army</a>
-    <a href="https://joinindiannavy.gov.in" target="_blank">Navy</a>
-    <a href="https://indianairforce.nic.in" target="_blank">Air Force</a>
-    <a href="https://ibps.in" target="_blank">IBPS</a>
-    <a href="https://sbi.co.in/web/careers" target="_blank">SBI</a>
-    <a href="https://railwayrecruitment.gov.in" target="_blank">Railway</a>
-    <a href="https://recruitment.rajasthan.gov.in" target="_blank">Rajasthan Jobs</a>
+  <div class="main-sections">
+    <div class="main-box">
+      <h2>Results</h2>
+      <p><a href="#">SSC GD Final Result 2025</a></p>
+      <p><a href="#">Rajasthan Police Result</a></p>
+    </div>
+    <div class="main-box">
+      <h2>Admit Cards</h2>
+      <p><a href="#">CTET Admit Card 2025</a></p>
+      <p><a href="#">SSC CHSL Tier 1 Admit Card</a></p>
+    </div>
+    <div class="main-box">
+      <h2>Latest Jobs</h2>
+      <p><a href="#">UP Police Constable 2025</a></p>
+      <p><a href="#">Rajasthan High Court LDC</a></p>
+    </div>
   </div>
-</div>
 
-<footer>
-  © 2025 IndiaJobHub.in | Powered by Dilip Jarwal
-</footer>
+  <div class="link-section">
+    <h3>Syllabus</h3>
+    <ul>
+      <li><a href="#">SSC CGL Syllabus 2025</a></li>
+      <li><a href="#">UPSC Prelims Syllabus</a></li>
+    </ul>
+  </div>
 
-<script>
-  // Example: You can add search or dynamic JS here later
-</script>
+  <div class="link-section">
+    <h3>Answer Keys</h3>
+    <ul>
+      <li><a href="#">SSC GD Answer Key 2025</a></li>
+      <li><a href="#">REET Level 2 Answer Key</a></li>
+    </ul>
+  </div>
+
+  <div class="link-section">
+    <h3>Important Links</h3>
+    <ul>
+      <li><a href="#">Sarkari Naukri Official</a></li>
+      <li><a href="#">Rajasthan Govt Job Portal</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    © 2025 India Result Hub. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
